@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- 
+       default functions
+       ====================
+       at() => access the array index values
+    -->
+
+    <script>
+        let num = [10,40,60,80,33];
+
+        console.log(num[0])
+
+        console.log(num.at(3))
+
+        // push() => add the value in last index of array
+
+        num.push(100)
+        num.push("raja")
+        console.log(num)
+
+        // pop() => remove the value in last index of array
+
+        num.pop() // raja
+        // num.pop() // 100
+        // num.pop() // 33
+        // num.pop() // 80
+        // num.pop() // 60
+
+        // delete num[2]
+        console.log(num)
+
+        // shift() => remove the first element in array
+
+        num.shift()
+        console.log("After shift: ", num)
+
+        // unshift() => add the elememt in the array first index
+
+         
+        num.unshift("karthik")
+        console.log(num)
+
+        // push() => last index add the element
+        // pop() => last index remove the element
+        // shift() => first index remove the element
+        //  unshift() => first index add the element
+
+
+
+    </script>
+</body>
+</html>

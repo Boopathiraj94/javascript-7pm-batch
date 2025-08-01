@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- looping
+        while
+        do..while
+        for
+        
+        // initialization
+        // end (condition)
+        // increment / decrement
+    
+        //init
+         while(condition){
+
+         //incre/decre
+         }  
+         a<=10
+         1<=10 
+         1. naveen
+         2.naveen
+         condition 
+
+         if(){
+         }else{
+         }
+
+         for(initial;condition;incre/dec){
+           //block of code
+         }
+ 10 9 8 7 6 5 4 3 2 1
+
+ 10%2 ==0  even
+ 9%2 == 1 odd
+  Boolean 
+    true => 1
+    false => 0
+
+ a<=1 => 10<=1 wrong
+ a>=1 , 10>=1 right
+
+  for(init;condition;inc/dec){ // row
+        for(init;condition;inc/dec){ // column
+    
+        }
+  }
+
+  outter for 1
+inner for 1,2,3,4,5
+
+  1
+  1 2
+  1 2 3 
+  1 2 3 4
+  1 2 3 4 5
+
+
+
+  1 2 3 4 5
+  1 2 3 4 5
+  1 2 3 4 5
+  1 2 3 4 5
+  1 2 3 4 5
+
+  1
+  2 2
+  3 3 3
+  4 4 4 4 
+  5 5 5 5 5
+
+  5 4 3 2 1
+  5 4 3 2 1
+  5 4 3 2 1
+  5 4 3 2 1
+  5 4 3 2 1
+
+1)  * * * * * 
+    * * * *
+    * * *
+    * * 
+    *
+
+2)  5 4 3 2 1
+    5 4 3 2
+    5 4 3 
+    5 4
+    5
+    
+3)  1
+    1 2
+    1 2 3
+    1 2 3 4
+    1 2 3 4 5
+
+4)  1
+    2 2 
+    3 3 3 
+    4 4 4 4
+    5 5 5 5 5
+
+5)  1
+    2  3
+    4  5  6 
+    7  8  9  10
+    11 12 13 14 15
+
+
+    * * * * *
+    * * * * *
+    * * * * *
+    * * * * *
+    * * * * *
+
+    <=>
+    * * * * *
+    *
+    * * * * *
+            *
+    * * * * *
+    &nbsp;&nbsp;
+    row => i
+    column => j
+
+    * * * * *
+    *       *
+    *       *
+    *       *
+    * * * * *
+
+    * * * * *
+    *       *
+    * * * * *
+            *
+    * * * * *
+
+   html ,css , js, bootstrap,jquery, json  => web dev
+   react js => 
+   fe
+
+    -->
+
+    <script>
+
+        let names = prompt("Enter your detauls");
+
+        let numcount = 0;
+        for(let el of names){
+            // console.log(el)
+            if(el >=0 && el<=9){
+                numcount++
+                // numcount = numcount +1
+            }
+        }
+        console.log(numcount)
+
+        // console.log(names[0])
+        // console.log(names[1])
+        // console.log(names[2])
+        // console.log(names[3])
+        // console.log(names[4])
+        // console.log(names[5])
+
+        // for(let i = 1;i<=5;i++){
+        //     for(let j=1;j<=5;j++){
+        //         if(((i ==2) && (j==2 || j==3 || j==4)) || ((i==4)&& (j==2 || j==3 || j==1 || j==4)) ){
+        //             document.writeln("&nbsp;&nbsp;")
+        //         }
+        //         // else if(i==4 && (j== 1 || j==2||j==3||j==4)){
+                    
+        //         //     document.writeln("&nbsp;&nbsp;")
+        //         // }
+        //         else{
+        //             document.writeln("*")
+        //         }
+                
+        //     }
+        //     document.writeln("<br>")
+        // }
+
+
+
+        // for(let i = 1;i<=5;i++){
+        //     for(let j=1;j<=5;j++){
+        //         if(i ==2 && (j==2 || j ==3 || j==4 || j==5)){
+        //             document.writeln("&nbsp;&nbsp;")
+        //         }
+        //         else if(i==4 && (j== 1 || j==2||j==3||j==4)){
+                    
+        //             document.writeln("&nbsp;&nbsp;")
+        //         }
+        //         else{
+        //             document.writeln("*")
+        //         }
+                
+        //     }
+        //     document.writeln("<br>")
+        // }
+
+
+
+        // for(let a=5;a>=1;a--){
+        //     for(let b=5;b>=1;b--){
+        //         document.writeln(b)
+        //     }
+        //     document.writeln("<br>")
+        //         // document.writeln(a)
+        // }
+
+        // for(let a=1;a<=5;a++){
+        //     for(let b=1;b<=a;b++){
+        //         document.writeln(b)
+        //     }
+        //     document.writeln("<br>")
+        //         // document.writeln(a)
+        // }
+
+        /*
+        1
+        2 2
+        3 3 3
+        4 4 4 4
+        5 5 5 5 5
+        
+        */
+
+        /*
+        o => a =1
+        in => b = 1 (b<=a) => (1<=1)
+
+        o => a =2
+        in => b = 1, 2 (b<=a) => (1<=2)
+        in => b = 2, 2 (b<=a) => (2<=2)
+            1 2
+
+
+        */
+
+        /*
+        outter a = 1
+        inner b = 1,2,3,4,5
+        print (a) => 1 1 1 1 1 
+        
+        outter a = 2
+        inner b = 1,2,3,4,5
+        print (a) => 2 2 2 2 2 
+
+        outter a =3
+        inner b = 1,2,3,4,5
+        print (a) => 3 3 3 3 3
+        
+        outter a =4
+        inner b = 1,2,3,4,5
+        print (a) => 4 4 4 4 4 
+
+        outter a =3
+        inner b = 1,2,3,4,5
+        print (a) => 5 5 5 5 5 
+ 
+         1 1 1 1 1
+         2 2 2 2 2
+         3 3 3 3 3
+         4 4 4 4 4
+         5 5 5 5 5
+
+
+
+
+
+
+        */
+
+        /*
+
+        outter a = 1
+         inner b = 1,2,3,4,5
+
+         outter a = 2
+         innner b =1,2,3,4,5
+         outter a = 1
+         inner b = 1,2,3,4,5
+
+         outter a =3
+         innner b =1,2,3,4,5
+
+         outter a = 4
+         inner b = 1,2,3,4,5
+ 
+         outter a = 5
+         innner b =1,2,3,4,5
+
+
+        */
+         
+
+
+        // debugger;
+        // for(let a = 10;a>=1;a--){
+        //  let ans =    (a%2) ? "ODD" : "EVEN";
+        //                     // ?  true  : false
+        //     // let ans;
+        // //  if(a%2){
+        // //     ans = "ODD"
+        // //  }else{
+        // //      ans = "EVEN"
+        // //  }
+
+        //     document.writeln(a,")",ans,"<br>")
+        // }
+
+        
+        // let a = 1;
+        // while(a<=10){
+        //     if(a==5 || a==8){
+        //         document.writeln(a,") Raja","<br>")
+        //     }
+        //     // else if(a==8){
+        //     //     document.writeln(a,") Raja","<br>")
+        //     // }
+        //     else{
+        //          document.writeln(a,") Naveen","<br>")
+        //     }
+           
+        //     a++;
+        // }
+    </script>
+</body>
+</html>
