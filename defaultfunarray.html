@@ -6,7 +6,8 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>foreach ,filter,map, reduce</h1>
+    <!--  -->
     <!-- 
        default functions
        ====================
@@ -112,6 +113,140 @@
 
 // find(),findIndex() , findLast,findLastIndex()
 // home work task  splice() => add / remove
+/*
+
+syntax:
+let array = [1,2,4,5,6]
+ array.forEach((element,index,array)=>{
+ 
+ })
+
+ it will return undefined data type
+ element => mandatory
+ index, array => optional
+
+ 
+*/
+
+//   let names = ['naveen','arul','karthick','jenita','mathi'];
+
+    // names.forEach((e,index,n)=>{
+    //         console.log(e, 'index: ',index,"array: ",n)
+            
+    // })
+
+//   const filterArray =   names.filter((ele)=>{
+//         // debugger;
+//         if(ele === "karthick"){
+//             return ele;
+//         }
+//     })
+
+
+/*
+filter
+ ======
+  if we add the filter in array , it will return the
+   new array
+
+   syntax:
+
+   array.filter((element,index,array)=>{
+   
+   })
+    element => mandatory
+    index, array => optional
+
+*/
+//    let nums= [100,300,5000,400,600,6000,1000]
+
+//  const finalarry =    nums.filter((e)=>{
+
+//             if(e >=200 && e<= 5000){
+//                return e 
+//             }
+//     })
+
+//     console.log(finalarry)
+
+
+    // console.log(filterArray)
+
+/*
+map
+=====
+let a = [1,2,4,5,7];
+
+let a = [2,4,8,10,14]
+
+it will return the new array , but it can change the elements
+* it will not change the array length
+syntax:
+array.map((element,index,array)=>{
+
+})
+   element => mandatory
+    index, array => optional
+
+
+*/
+// let fin =   a.map((ele)=>{
+//       return ele * 3;
+//   })
+// let fin = a.map((e)=> {return e*3})
+
+// let g;
+// console.log(g)
+// let a = [1,2,3,5,6];
+//   let fin = a.map((e)=>{
+//         if(e >5){
+//             return
+//         }
+//         return e*2
+//   })
+
+//   console.log(fin)
+   
+  /*
+
+[2,4,6,10,undefined]
+
+
+   1 => 1*3 => 3
+   2 => 2*3 => 6
+   3 => 3*3 => 9
+   4 => 5*3 => 15
+   5 => 6*3 => 18
+
+
+   reduce
+   =====
+
+   it will return the single output 
+
+   syntax:
+   ======
+   array.reduce((var1,var2)=>{
+   })
+
+   ex:
+   ===
+    array.reduce((sum,iterate)=>{
+   })
+  */
+
+  let num = [10,20,30,40,50];
+
+// 1+2+3+4+5 =>15 
+
+//   sum+=1  => sum = sum +1
+
+  const finalAns =   num.reduce((sum,iterate)=>{
+console.log(sum, 'iterate: ',iterate," total sum: " ,sum+iterate)
+return sum + iterate;
+    })
+
+console.log(finalAns)
 
 
     </script>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!--
+    
+let a = [1,8,4,6,7,7]
+  a[0]
+
+objects
+*object is one the template
+* each and every key is unique identifier
+* key and value pair
+    name:"raja"
+
+Syntax:
+=========
+
+let variable = {
+        key1:value1,
+        key2:value2,
+        key3:value3,
+        key4:value4,
+        key5:value5,
+        key6:[3,5,5,8,9,9],
+        key7:{
+                key1:value1,
+                key2:value2,
+        },
+        functionName:function(){
+            return ;
+        }
+};
+
+key or property
+
+-->
+
+
+    <script>
+        let n = [1, 5, 7, 8, 9, 8];
+        // console.log(n, n[4])
+        // join operator +
+        let employee = {
+            ename: "Karthik",
+            fatherName: "Saravanan",
+            dob: "2002-5-25",
+            age: 22,
+            phone: "+91-9465464654",
+            email: "karthick@gmail.com",
+            salary: 30000,
+            increment: 20000,
+            address: "dindigul",
+            role: "Full stack developer",
+            team: "TVK",
+            fullName: function () {
+                return this.ename + " " + this.fatherName;
+            },
+            totalSalary: function () {
+                return this.salary + this.increment;
+            }
+        };
+        // array of object [{},{},{}]
+
+        let employees = [
+            {
+                ename: "Karthik",
+                fatherName: "Saravanan",
+                dob: "2002-5-25",
+                age: 22,
+                phone: "+91-9465464654",
+                email: "karthick@gmail.com",
+                salary: 30000,
+                increment: 20000,
+                address: "dindigul",
+                company_name:"google",
+                role: "Full stack developer",
+                team: "TVK",
+                fullName: function () {
+                    return this.ename + " " + this.fatherName;
+                },
+                totalSalary: function () {
+                    return this.salary + this.increment;
+                }
+            },
+            {
+                ename: "arul",
+                fatherName: "charles",
+                dob: "2000-4-7",
+                age: 24,
+                phone: "+91-9465464654",
+                email: "arul@gmail.com",
+                salary: 800000,
+                increment: 20000,
+                address: "dindigul",
+                company_name:"microsoft",
+                role: "Full stack developer",
+                team: "TVK",
+                fullName: function () {
+                    return this.ename + " " + this.fatherName;
+                },
+                totalSalary: function () {
+                    return this.salary + this.increment;
+                }
+            },
+
+        ]
+
+ // array of object [{},{},{}]
+        console.log(employees)
+
+        console.log(employees[1].company_name)
+        console.log(employees[0].ename)
+
+        let sd= {
+                ename: "arul",
+                fatherName: "charles",
+                dob: "2000-4-7",
+                age: 24,
+                phone: "+91-9465464654",
+                email: "arul@gmail.com",
+                salary: 800000,
+                increment: 20000,
+                address: "dindigul",
+                company_name:"microsoft",
+                role: "Full stack developer",
+                team: "TVK",
+                fullName: function () {
+                    return this.ename + " " + this.fatherName;
+                },
+                totalSalary: function () {
+                    return this.salary + this.increment;
+                }
+            };
+            // Number()
+            // object functions
+           let sdkeys =  Object.keys(sd);
+           console.log(sdkeys)
+
+           console.log(Object.values(sd))
+
+           console.log(Object.entries(sd))
+/*
+let sd= {
+                ename: "arul",
+                fatherName: "charles",
+                dob: "2000-4-7",
+                age: 24,
+                phone: "+91-9465464654",
+                email: "arul@gmail.com",
+                salary: 800000,
+                increment: 20000,
+                address: "dindigul",
+                company_name:"microsoft",
+                role: "Full stack developer",
+                team: "TVK",
+                fullName: function () {
+                    return this.ename + " " + this.fatherName;
+                },
+                totalSalary: function () {
+                    return this.salary + this.increment;
+                }
+            },
+
+Object.keys(a)
+Object.values(a)
+Object.entries(a)
+
+*/
+
+        // 
+        // console.log(employee)
+
+        // console.log(employee.fullName())
+
+        // console.log(employee.totalSalary())
+
+        // 2 way to access the object
+        /*
+                1. dot notation (.)
+                2. bracket notation []
+        */
+
+        // dot notation
+        // console.log(employee.address)
+        // console.log(employee.age)
+        // console.log(employee.email)
+        // console.log(employee.team)
+        // console.log(employee.role)
+
+        // bracket notation
+        console.log("----------------------")
+        // console.log(employee['address'])
+        // console.log(employee['email'])
+        // console.log(employee['role'])
+        // console.log(employee['team'])
+
+        // add the new key and value pair
+
+        employee.company_name = "google company";
+        employee.location = "Chennai";
+
+        // update the existing key 
+
+        employee.salary = 50000;
+
+        // delete the existing key
+
+        delete employee.age;
+
+
+
+    </script>
+
+</body>
+
+</html>
